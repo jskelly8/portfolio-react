@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 // Navbar -----------------style later
-const Nav = () => {
+export default function Nav() {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -38,5 +38,3 @@ const Nav = () => {
         </nav>
     );
 };
-
-export default Nav;
