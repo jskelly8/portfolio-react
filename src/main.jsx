@@ -12,6 +12,12 @@ import PortfolioPage from './pages/PortfolioPage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
 import ResumePage from './pages/ResumePage.jsx';
 
+// Ensure you've linked the Font Awesome kit properly
+const script = document.createElement('script');
+script.src = "https://kit.fontawesome.com/c9927211ea.js";
+script.crossOrigin = "anonymous";
+document.body.appendChild(script);
+
 // Accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
   {

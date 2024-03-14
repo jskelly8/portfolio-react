@@ -1,5 +1,5 @@
 // React Imports
-import Card from './components/UI/Card';
+import Card from '../components/UI/Card.jsx';
 
 // Portfolio Page  -----------------style later
 export default function PortfolioPage() {
@@ -54,7 +54,7 @@ export default function PortfolioPage() {
     return (
         <main className="container">
             <div className="portImg">
-                <img src="path_to_image" alt="Project" />
+                <img src="/images/Bubbles.jpg" alt="Abstract bubbles" />
             </div>
             <div className="portIntro">
                 <h1>My Projects</h1>

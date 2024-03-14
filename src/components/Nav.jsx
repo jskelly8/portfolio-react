@@ -10,30 +10,37 @@ export default function Nav() {
         setIsOpen(!isOpen);
     };
 
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
     return (
         <nav className="navbar">
             <div className="navbar-container">
-                {/* add logo below later? */}
-                <div className="brand">Logo</div>
-                <div className={`menu-toggle ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
-                    <div className="bar"></div>
-                    <div className="bar"></div>
-                    <div className="bar"></div>
+                <img src='/images/FaviconDesign.png' alt='My Logo'></img>
+                <div>
+                    <div className='burgerBox'>
+                        <div className={`menu-toggle ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
+                            <div className="bar"></div>
+                            <div className="bar"></div>
+                            <div className="bar"></div>
+                        </div>
+                    </div>
+                    <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
+                        <li>
+                            <Link to="/" onClick={closeMenu}>Home</Link>
+                        </li>
+                        <li>
+                            <Link to="/portfolio" onClick={closeMenu}>Portfolio</Link>
+                        </li>
+                        <li>
+                            <Link to="/contact" onClick={closeMenu}>Contact Me</Link>
+                        </li>
+                        <li>
+                            <Link to="/resume" onClick={closeMenu}>Resume</Link>
+                        </li>
+                    </ul>
                 </div>
-                <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/portfolio">Portfolio</Link>
-                    </li>
-                    <li>
-                        <Link to="/contact">Contact Me</Link>
-                    </li>
-                    <li>
-                        <Link to="/resume">Resume</Link>
-                    </li>
-                </ul>
             </div>
         </nav>
     );
