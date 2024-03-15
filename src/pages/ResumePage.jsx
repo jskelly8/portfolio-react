@@ -56,6 +56,7 @@ export default function ResumePage() {
             <p className="jumpTo">
                 Jump to: <a href="#skills">Technical Skills</a> | <a href="#experience">Other Experience</a> | <a href="#education">Education</a>
             </p>
+            <p className="download">Download my <a href="https://drive.google.com/uc?export=download&id=1DZFaFUYBYOZiWSZibdqZoq00pzAc9oxA" download>resume</a></p>
             <div className="resume">
                 {/* <p>Download my <a>resume</a></p> */}
                 <div id="skills">

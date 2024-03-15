@@ -315,6 +315,19 @@ body {
   color: #fff;
 }
 
+.download {
+  color: #42353a;
+}
+
+.download a {
+  text-decoration: none;
+  color: #42353a;
+}
+
+.download a:hover {
+  color: #fff;
+}
+
 .resume {
   margin-top: 30px;
   text-align: center;
@@ -491,6 +504,10 @@ p {
   text-decoration: none;
   color: #fff;
   padding: 0.5rem;
+}
+
+.nav-links li a:hover {
+  color: #e4bfc6;
 }
 
 @media (max-width: 768px) {

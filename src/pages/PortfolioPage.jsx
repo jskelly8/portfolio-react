@@ -3,8 +3,6 @@ import Card from '../components/UI/Card.jsx';
 
 // Portfolio Page
 export default function PortfolioPage() {
-    // Hooks and Retrivals 
-
     // Data for projects
     const projects = [
         {

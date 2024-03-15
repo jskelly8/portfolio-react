@@ -1,10 +1,34 @@
 // React Imports
+import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faMobileAlt, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 // Contact Page
 export default function ContactPage() {
-    // Hooks and Retrivals if needed
+    // State for form field validation
+    const [errors, setErrors] = useState({});
+
+    // Function to handle form field validation
+    const handleValidation = (fieldName, value) => {
+        if (!value.trim()) {
+            setErrors(prevErrors => ({
+                ...prevErrors,
+                [fieldName]: 'This field is required',
+            }));
+        } else if (fieldName === 'email') {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const isValidEmail = emailRegex.test(value);
+            setErrors(prevErrors => ({
+                ...prevErrors,
+                email: isValidEmail ? '' : 'Please enter a valid email address',
+            }));
+        } else {
+            setErrors(prevErrors => ({
+                ...prevErrors,
+                [fieldName]: '',
+            }));
+        }
+    };
 
     // Page
     return (
@@ -66,19 +90,46 @@ export default function ContactPage() {
                 <form>
                     <div className="form-group">
                         <label htmlFor="name">Name:</label>
-                        <input type="text" id="name" name="name" required />
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                            onBlur={(e) => handleValidation('name', e.target.value)}
+                        />
+                        {errors.name && <p className="error">{errors.name}</p>}
                     </div>
                     <div className="form-group">
                         <label htmlFor="email">Email:</label>
-                        <input type="email" id="email" name="email" required />
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            onBlur={(e) => handleValidation('email', e.target.value)}
+                        />
+                        {errors.email && <p className="error">{errors.email}</p>}
                     </div>
                     <div className="form-group">
                         <label htmlFor="phone">Phone:</label>
-                        <input type="tel" id="phone" name="phone" required />
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            required
+                            onBlur={(e) => handleValidation('phone', e.target.value)}
+                        />
+                        {errors.phone && <p className="error">{errors.phone}</p>}
                     </div>
                     <div className="form-group">
                         <label htmlFor="message">Message:</label>
-                        <textarea id="message" name="message" required />
+                        <textarea
+                            id="message"
+                            name="message"
+                            required
+                            onBlur={(e) => handleValidation('message', e.target.value)}
+                        />
+                        {errors.message && <p className="error">{errors.message}</p>}
                     </div>
                     <p>*Note: Currently this form does not function, Coming soon</p>
                     <button type="submit">Submit</button>

@@ -2,8 +2,6 @@
 
 // Home Page
 export default function HomePage() {
-    // Hooks and Retrivals if needed
-
     // Page
     return (
         <main className="container">
