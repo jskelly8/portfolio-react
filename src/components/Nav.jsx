@@ -17,7 +17,7 @@ export default function Nav() {
     return (
         <nav className="navbar">
             <div className="navbar-container">
-                <img src='/images/FaviconDesign.png' alt='My Logo'></img>
+                <img src='/images/iconFaviconDark.png' alt='My Logo'></img>
                 <div>
                     <div className='burgerBox'>
                         <div className={`menu-toggle ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
