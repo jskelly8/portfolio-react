@@ -2,7 +2,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faMobileAlt, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
-// Contact Page  -----------------style later
+// Contact Page
 export default function ContactPage() {
     // Hooks and Retrivals if needed
 

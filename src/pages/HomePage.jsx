@@ -1,6 +1,6 @@
 // React Imports
 
-// Home Page  -----------------style later
+// Home Page
 export default function HomePage() {
     // Hooks and Retrivals if needed
 
