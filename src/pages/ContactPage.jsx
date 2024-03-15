@@ -9,6 +9,7 @@ export default function ContactPage() {
     // Page
     return (
         <main className="contactContainer">
+            <img src='/images/sphereWide.jpg' alt='Sphere in middle of swirls'></img>
             <div className="contactInfo">
                 <div className="contactIntro">
                     <h3>Get In Touch</h3>

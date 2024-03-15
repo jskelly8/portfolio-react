@@ -1,6 +1,6 @@
 // React Imports
 
-// Resume Page  -----------------style later
+// Resume Page
 export default function ResumePage() {
     // Technical skills section
     const technicalSkills = [
@@ -51,8 +51,8 @@ export default function ResumePage() {
 
     // Page
     return (
-        <main className="container">
-            <h1>My Resume</h1>
+        <main className="resumeContainer">
+            <h1 id="top">My Resume</h1>
             <p className="jumpTo">
                 Jump to: <a href="#skills">Technical Skills</a> | <a href="#experience">Other Experience</a> | <a href="#education">Education</a>
             </p>
@@ -89,6 +89,7 @@ export default function ResumePage() {
                         <dt>Associates of Science</dt>
                         <dd>Hopkinsville Community College - Hopkinsville, KY</dd>
                     </dl>
+                    <p>Back to <a href="#top">Top</a></p>
                 </div>
             </div>
         </main>
