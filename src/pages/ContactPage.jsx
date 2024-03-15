@@ -1,4 +1,6 @@
 // React Imports
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faMobileAlt, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 // Contact Page  -----------------style later
 export default function ContactPage() {
@@ -6,25 +8,22 @@ export default function ContactPage() {
 
     // Page
     return (
-        <main className="container">
+        <main className="contactContainer">
             <div className="contactInfo">
                 <div className="contactIntro">
                     <h3>Get In Touch</h3>
                     <h1>Let's Connect And Create</h1>
                     <p>Ready to bring your ideas and needs to life? Let's work together to build something amazing.</p>
                     <div className="email">
-                        <img></img>
-                        <p>jessskelton888@gmail.com</p>
+                        <p><FontAwesomeIcon icon={faEnvelope} className='icon' /> jessskelton888@gmail.com</p>
                     </div>
                     <div className="phone">
-                        <img></img>
-                        <p>931-401-0523</p>
+                        <p><FontAwesomeIcon icon={faMobileAlt} className='icon' /> 931-401-0523</p>
                     </div>
                 </div>
                 <div className="location">
                     <h5>Location</h5>
-                    <img></img>
-                    <p>Murfreesboro, TN, USA</p>
+                    <p><FontAwesomeIcon icon={faLocationDot} className='icon' /> Murfreesboro, TN, USA</p>
                 </div>
                 <div className="hours">
                     <h5>Hours</h5>

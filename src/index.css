@@ -7,13 +7,17 @@
 }
 
 /* Main Styling */
+body {
+  margin: 0;
+}
+
 .container {
   padding: 20px;
   background: linear-gradient(to bottom, #e4bfc6, #42353a);
 }
 
 .homeImg {
-  max-width: 80vw; 
+  max-width: 70vw; 
   height: auto;
   margin: 0 auto 5vh; 
   display: block; 
@@ -54,6 +58,115 @@
 .homeContact a:hover {
   color: #e4bfc6;
   cursor: pointer;
+}
+
+/* Contact Styling */
+/* Contact Info */
+.contactContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  background: linear-gradient(to bottom, #e4bfc6, #42353a);
+}
+
+.contactInfo,
+.contactForm {
+  width: 100%;
+}
+
+.contactIntro h3 {
+  color: #42353a;
+  font-size: 26px;
+  margin: 0 0 1rem 0;
+}
+
+.contactIntro h1 {
+  color: #0d0d0e;
+  font-size: 48px;
+  margin: 0;
+}
+
+.contactIntro p, .location p, .hours table {
+  color: #fff;
+  font-size: 21px;
+  margin: 1rem 0;
+}
+
+.icon {
+  color: #42353a;
+}
+
+.location h5, .hours h5 {
+  color: #0d0d0e;
+  font-size: 25px;
+  margin: 0;
+}
+
+/* Contact Form */
+.contactForm {
+  margin-top: 3rem;
+}
+
+.contactForm form {
+  max-width: 600px; /* Set maximum width for the form */
+  margin: auto; 
+  padding: 20px;
+  border: 1px solid #42353a; 
+  border-radius: 5px; 
+}
+
+.contactForm form .form-group {
+  margin: 2rem;
+}
+
+.contactForm form label {
+  display: block; 
+  font-weight: bold;
+  color: #42353a;
+}
+
+.contactForm form input[type="text"],
+.contactForm form input[type="email"],
+.contactForm form input[type="tel"],
+.contactForm form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #42353a;
+  border-radius: 4px;
+}
+
+.contactForm form textarea {
+  min-height: 150px;
+}
+
+.contactForm form p {
+  font-size: 14px;
+  color: #e4bfc6;
+  margin-top: 10px;
+}
+
+.contactForm form button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #747579; 
+  color: #0d0d0e;
+  border: none;
+  border-radius: 4px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contactForm form button[type="submit"]:hover {
+  background-color: #e4bfc6;
+}
+
+@media screen and (min-width: 990px) {
+  .contactInfo,
+  .contactForm {
+    width: 50%;
+  }
 }
 
 /* Navbar Styling */
