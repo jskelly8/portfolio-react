@@ -8,21 +8,19 @@ export default function HomePage() {
     return (
         <main className="container">
             <img src="/images/FullLogoWide.jpg" alt="My Logo Large" className="homeImg"></img>
-
-            <div >
-                <img className="photo"></img>
+            <div className="photoContainer">
+                <img className="photo" src="/images/MeCropped.png" alt="Photo of Jess Skelton"></img>
             </div>
-
             <div className="nameTitle">
                 <h1>Jess Skelton</h1>
                 <h3>Software Engineer</h3>
             </div>
 
             <div className="paragraph">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>As a dedicated web developer, I bring a blend of passion and proficiency to every project. With a knack for rapid learning and a deep understanding of modern technologies such as JavaScript, Node.js, React, and MySQL, I thrive in creating and enhancing web applications. My commitment to staying at the forefront of industry trends ensures that I deliver innovative solutions that exceed expectations. Ready to tackle challenges head-on and elevate your digital presence, I am poised to contribute effectively to your team's success.</p>
             </div>
             <div className="homeContact">
-                <h5>Let's connect! <a href="#contact">Contact Me</a></h5>
+                <h5>Let's connect! <a href="/contact">Contact Me</a></h5>
             </div>
         </main>
     );

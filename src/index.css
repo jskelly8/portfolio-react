@@ -21,12 +21,25 @@ body {
   height: auto;
   margin: 0 auto 5vh;
   display: block;
+  border: 2px solid #42353a;
   border-radius: 10px;
 }
 
-/* .photo {
+.photoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-} */
+.photo {
+  width: 10rem;
+  height: auto;
+  border-radius: 15%;
+  margin-bottom: 20px;
+  border: 2px solid #42353a;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
 
 .nameTitle h1 {
   color: #e4bfc6;
@@ -61,6 +74,99 @@ body {
   cursor: pointer;
 }
 
+/* Portfolio Styling */
+.portImg {
+  width: 100%;
+  height: auto;
+  border: 2px solid #42353a;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.portIntro h1 {
+  color: #42353a;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.portIntro p {
+  margin-bottom: 3rem;
+}
+
+.portCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 25rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.cardImage {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.hoverInfo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #42353a;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hoverInfo:hover {
+  opacity: 1;
+}
+
+.cardTitle {
+  color: #e4bfc6;
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.cardTitle:hover {
+  color: #fff;
+}
+
+.repoLink {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.repoLink:hover {
+  color: #e4bfc6;
+}
+
+.cardSubtitle {
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 20rem;
+  }
+
+  .cardImage {
+    width: 100%;
+  }
+}
+
 /* Contact Styling */
 /* Contact Info */
 .contactContainer {
@@ -73,8 +179,9 @@ body {
 .contactContainer img {
   width: 100%;
   height: auto;
-  border-radius: 10px; /* Rounded edges for the image */
-  margin-bottom: 20px; /* Add margin to separate the image from contact info */
+  border: 2px solid #42353a;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .contactInfo,
@@ -86,7 +193,7 @@ body {
 .contactIntro h3 {
   color: #42353a;
   font-size: 26px;
-  margin: 0 0 1rem 0;
+  margin: 0 0 0.5rem 0;
 }
 
 .contactIntro h1 {
@@ -123,7 +230,7 @@ body {
   max-width: 600px;
   margin: auto;
   padding: 20px;
-  border: 1px solid #42353a;
+  border: 2px solid #42353a;
   border-radius: 5px;
 }
 
