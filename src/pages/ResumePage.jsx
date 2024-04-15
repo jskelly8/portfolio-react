@@ -1,14 +1,25 @@
 // React Imports
+import { useState } from 'react';
 
 // Resume Page
 export default function ResumePage() {
     // Technical skills section
-    const technicalSkills = [
-        'JavaScript', 'Node / Node.js', 'Express / Express.js', 'SQL / MySQL', 'Sequelize (ORM)', 'React.js',
-        'NoSQL', 'MongoDB', 'Mongoose', 'Inquirer', 'Insomnia', 'Git / GitHub', 'GitLab', 'jQuery', 'JSON',
-        'bcrypt', 'TypeScript', 'Bootstrap', 'CSS', 'Apollo Client / Server', 'cURL', 'GraphQL', 'Handlebars / Handlebars.js',
-        'Heroku', 'HTML', 'HTML5', 'IndexedDB', 'Jest', 'JWT', 'MVC', 'OOP', 'Redux', 'Stripe', 'TDD', 'Vite', 'Webpack'
+    // States for accordion toggle
+    const [isFrontendOpen, setIsFrontendOpen] = useState(false);
+    const [isBackendOpen, setIsBackendOpen] = useState(false);
+
+    // Technical skills split into Front-end and Back-end
+    const frontendSkills = [
+        'React.js', 'JavaScript', 'jQuery', 'Bootstrap', 'CSS', 'HTML', 'HTML5', 'Apollo Client', 'Redux'
     ];
+    const backendSkills = [
+        'Node / Node.js', 'Express / Express.js', 'SQL / MySQL', 'Sequelize (ORM)', 'NoSQL', 'MongoDB', 'Mongoose', 
+        'GraphQL', 'Apollo Server', 'bcrypt', 'JWT'
+    ];
+
+    // Toggle functions for each category
+    const toggleFrontend = () => setIsFrontendOpen(!isFrontendOpen);
+    const toggleBackend = () => setIsBackendOpen(!isBackendOpen);
 
     // Other experience section
     const otherExperience = [
@@ -56,16 +67,27 @@ export default function ResumePage() {
             <p className="jumpTo">
                 Jump to: <a href="#skills">Technical Skills</a> | <a href="#experience">Other Experience</a> | <a href="#education">Education</a>
             </p>
-            <p className="download">Download my <a href="https://drive.google.com/uc?export=download&id=1DZFaFUYBYOZiWSZibdqZoq00pzAc9oxA" download>resume</a></p>
+            <p className="download">Download my <a href="https://drive.google.com/uc?export=download&id=1pxUSGHD5GPt44qkCSZAbFUNMaE8rKXie" download>resume</a></p>
             <div className="resume">
-                {/* <p>Download my <a>resume</a></p> */}
                 <div id="skills">
                     <h3>Technical Skills</h3>
-                    <ul>
-                        {technicalSkills.map((skill, index) => (
-                            <li key={index}>{skill}</li>
-                        ))}
-                    </ul>
+                    <p className="jumpTo">Click the category to view related skills</p>
+                    <button className="accordion-button" onClick={toggleFrontend} aria-expanded={isFrontendOpen}>Front-end Technologies</button>
+                    {isFrontendOpen && (
+                        <ul>
+                            {frontendSkills.map((skill, index) => (
+                                <li key={index}>{skill}</li>
+                            ))}
+                        </ul>
+                    )}
+                    <button className="accordion-button" onClick={toggleBackend} aria-expanded={isBackendOpen}>Back-end Technologies</button>
+                    {isBackendOpen && (
+                        <ul>
+                            {backendSkills.map((skill, index) => (
+                                <li key={index}>{skill}</li>
+                            ))}
+                        </ul>
+                    )}
                 </div>
                 <div id="experience">
                     <h3>Other Experience</h3>

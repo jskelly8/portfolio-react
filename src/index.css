@@ -344,6 +344,31 @@ body {
   padding: 0;
 }
 
+.resumeContainer .accordion-button {
+  width: 90%; 
+  margin: 10px auto; 
+  padding: 10px 20px;
+  background-color: #42353a; 
+  color: #e4bfc6; 
+  font-family: "Architects Daughter"; 
+  font-size: 24px; 
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.resumeContainer .accordion-button:hover {
+  background-color: #e4bfc6; 
+  color: #42353a; 
+}
+
+.resumeContainer .accordion-button:focus {
+  outline: none; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+}
+
 #skills ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

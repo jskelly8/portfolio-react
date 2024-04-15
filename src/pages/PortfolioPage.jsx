@@ -6,18 +6,25 @@ export default function PortfolioPage() {
     // Data for projects
     const projects = [
         {
+            img: '/images/hambrain.jpg',
+            title: 'Hamster Brain',
+            siteLink: 'https://hamsterbrain.onrender.com/',
+            repoLink: 'https://github.com/jskelly8/hamsterBrain',
+            subtitle: 'MERN, GraphQL, JWT, Apollo'
+        },
+        {
+            img: '/images/ttt.jpeg',
+            title: 'TableTopTies',
+            siteLink: 'https://tabletopties-6b21a152bf3f.herokuapp.com/',
+            repoLink: 'https://github.com/jskelly8/tabletopties',
+            subtitle: 'Socket.io, MySQL, Handlebars'
+        },
+        {
             img: '/images/blog.jpeg',
             title: 'Tech Blog',
             siteLink: 'https://tech-blog-ch-fce07de2de9a.herokuapp.com/',
             repoLink: 'https://github.com/jskelly8/tech-blog',
             subtitle: 'MySQL, Express, Node.js'
-        },
-        {
-            img: '/images/ttt.jpeg',
-            title: 'TableTop Ties',
-            siteLink: 'https://desolate-coast-16417-f21d4a060ca1.herokuapp.com/',
-            repoLink: 'https://github.com/Gerlach0130/tabletop-ties',
-            subtitle: 'Socket.io, MySQL, Handlebars'
         },
         {
             img: '/images/jate.jpeg',
@@ -39,13 +46,6 @@ export default function PortfolioPage() {
             siteLink: 'https://jskelly8.github.io/weather-dashboard/',
             repoLink: 'https://github.com/jskelly8/weather-dashboard',
             subtitle: 'JavaScript, 3rd party API'
-        },
-        {
-            img: '/images/note.jpeg',
-            title: 'Note Taker',
-            siteLink: 'https://jess-note-taker-5e8a79bae927.herokuapp.com/',
-            repoLink: 'https://github.com/jskelly8/note-taker',
-            subtitle: 'Node.js, Express, JavaScript'
         }
     ];
 

@@ -36,9 +36,9 @@ export default function ContactPage() {
             <img src='/images/sphereWide.jpg' alt='Sphere in middle of swirls'></img>
             <div className="contactInfo">
                 <div className="contactIntro">
-                    <h3>Get In Touch</h3>
-                    <h1>Let's Connect And Create</h1>
-                    <p>Ready to bring your ideas and needs to life? Let's work together to build something amazing.</p>
+                    <h3>Contact Me</h3>
+                    <h1>Join Forces and Innovate</h1>
+                    <p>Eager to turn your concepts and requirements into reality? Collaborate with me to create something extraordinary.</p>
                     <div className="email">
                         <p><FontAwesomeIcon icon={faEnvelope} className='icon' /> jessskelton888@gmail.com</p>
                     </div>
@@ -56,7 +56,7 @@ export default function ContactPage() {
                         <tbody>
                             <tr>
                                 <td>Monday</td>
-                                <td>9:00 AM - 7:00 PM</td>
+                                <td>12:00 PM - 7:00 PM</td>
                             </tr>
                             <tr>
                                 <td>Tuesday</td>
@@ -76,11 +76,11 @@ export default function ContactPage() {
                             </tr>
                             <tr>
                                 <td>Saturday</td>
-                                <td>9:00 AM - 7:00 PM</td>
+                                <td>10:00 AM - 3:00 PM</td>
                             </tr>
                             <tr>
                                 <td>Sunday</td>
-                                <td>9:00 AM - 7:00 PM</td>
+                                <td>10:00 AM - 7:00 PM</td>
                             </tr>
                         </tbody>
                     </table>
