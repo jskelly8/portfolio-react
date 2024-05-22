@@ -13,6 +13,13 @@ export default function PortfolioPage() {
             subtitle: 'MERN, GraphQL, JWT, Apollo'
         },
         {
+            img: '/images/deepThoughts.jpg',
+            title: 'Deep Thoughts',
+            siteLink: 'http://18.116.44.155/',
+            repoLink: 'https://github.com/jskelly8/aws-thought',
+            subtitle: 'MERN, AWS, DynamoDB, S3, EC2, NGINX'
+        },
+        {
             img: '/images/ttt.jpeg',
             title: 'TableTopTies',
             siteLink: 'https://tabletopties-6b21a152bf3f.herokuapp.com/',

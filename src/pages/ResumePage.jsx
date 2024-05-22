@@ -13,8 +13,8 @@ export default function ResumePage() {
         'React.js', 'JavaScript', 'jQuery', 'Bootstrap', 'CSS', 'HTML', 'HTML5', 'Apollo Client', 'Redux'
     ];
     const backendSkills = [
-        'Node / Node.js', 'Express / Express.js', 'SQL / MySQL', 'Sequelize (ORM)', 'NoSQL', 'MongoDB', 'Mongoose', 
-        'GraphQL', 'Apollo Server', 'bcrypt', 'JWT'
+        'Node / Node.js', 'Express / Express.js', 'SQL / MySQL', 'Sequelize (ORM)', 'NoSQL', 'MongoDB', 'Mongoose',
+        'GraphQL', 'Apollo Server', 'bcrypt', 'JWT', 'AWS', 'NGINX', 'S3', 'EC2', 'DynamoDB'
     ];
 
     // Toggle functions for each category
